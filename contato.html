@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
-    <style>
-        body{
-          font-family: 'Baloo 2';font-size: 18px;
-        }
-      </style>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
+    
     <title>CONTATO DO LETO</title>
 </head>
 <body>
-    <a href="index.html">voltar ao sobre</a>
-    <h1>CONTATO</h1>
+    <div class="bg-primary center my">
+      <a href="index.html">voltar ao sobre</a>
+      <h1>CONTATO</h1>
+    </div>
+    
     <hr>
-    <h3><Strong>Elielthon Soares</Strong></h3>
-    <p><Strong>Redes Sociais</Strong></p>
-    <ul>
-        <li>Linkedin: <a href="https://www.linkedin.com/in/elielthon-soares-de-souza-a3a7bb1a2/" target="_blank">CLIQUE AQUI</a></li>
-        <li>Instagram: <a href="https://www.instagram.com/letocrzy/" target="_blank">CLIQUE AQUI</a></li>
-        <li>GitHub: <a href="https://github.com/LetoMurakai" target="_blank">CLIQUE AQUI</a></li>
-    </ul>
-    <h2>Contato Profissional</h2>
 
-    <form>
+    <div class="center mx">
+      <h3><Strong>Elielthon Soares</Strong></h3>
+      <p><Strong>Redes Sociais</Strong></p>
+        <div>
+          <ul id="list-social">
+              <li>Instagram:<a href="https://www.instagram.com/letocrzy/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+              <li>Linkedin: <a href="https://www.linkedin.com/in/elielthon-soares-de-souza-a3a7bb1a2/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li>GitHub:<a href="https://github.com/LetoMurakai" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="bg-secondary center mx">
+      <h2>Contato Profissional</h2>
+      <form>
         <label for="nome"><Strong>Nome: </Strong></label>
         <input type="text" id="nome">
         <br>
@@ -41,13 +51,17 @@
         <label for="assunto"><Strong>Assunto: </Strong></label>
         <br>
 
-        <textarea name="assunto" id="assunto" cols="50" rows="10" lang="pt-br"></textarea>
+        <textarea name="assunto" id="assunto" cols="40" rows="10" lang="pt-br"></textarea>
         <br>
-        <button>Enviar</button>
+        <button class="btn">Enviar</button>
     </form>
+    </div>
 
-    <h3>Onde me encontrar ?</h3>
+    <h3 class="center my">Onde me encontrar ?</h3>
+    <div class="container mx">
+    
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117134.37912838008!2d-46.53546776272078!3d-23.444250726309523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef53fb1b5e26d%3A0x974ce18d22c3555b!2sGuarulhos%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1623861834774!5m2!1spt-BR!2sbr"
-     width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 </body>
 </html>

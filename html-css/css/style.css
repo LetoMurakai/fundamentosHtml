@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Baloo 2';font-size: 19px;
+}
+
+.container{
+    display: flex;
+   flex-flow: row;
+   justify-content: center;
+   align-items: center;
+}
+
+/**** Link *****/
+a{  
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}
+.btn{
+    background-color: rgb(141, 181, 221);
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.btn:hover{
+    padding: 1px 20.5px;
+    box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.205);
+}
+.btn a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*** textos ***/
+.texto-h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.p-align{
+    text-indent: 0.5em;
+    text-align: justify;
+    padding: 2em;
+}
+.descricao{
+    color: ghostwhite;
+    text-align: center;
+}
+
+/*** Sessões ***/
+#Lugares{
+    padding: 2em;
+    display: flex;
+}
+#Comidas{
+    padding: 2em;
+    display: flex;
+}
+.img{
+    background-color: #07a889;
+    display: block;
+}
+/**** Lista *****/
+li{
+    list-style: none;
+}
+
+/***nav***/
+#navbar{
+    padding: 1px 0;
+    background-color: #03ecbe;
+    display: block;
+    box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.377);
+}
+#navbar li{
+    display: inline;
+    margin-left: 1em;
+}
+
+#logo{
+    margin-left: 2em;
+}
+
+/*** fotter ***/
+#list-social li{
+    display: inline;
+    list-style: none;
+    color: whitesmoke;
+}
+#list-social a{
+    color: whitesmoke;
+}
