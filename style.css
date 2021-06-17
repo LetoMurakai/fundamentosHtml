@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo 2';font-size: 18px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/********estilos padrões********/
+.bg-primary{
+    background-color: rgb(127, 146, 255);
+}
+.bg-secondary{
+    background-color: rgba(127, 146, 255, 0.479);
+    border-radius: 60px;
+}
+.sombra{
+    box-shadow: 2px 2px 10px 1px black;
+}
+.img-perfil{
+    border: 1px solid rgb(127, 146, 255);
+    border-radius: 50%;
+}
+
+/********estilos de textos********/
+#list-social{
+    list-style: none;
+    padding: 5px;
+}
+
+/********alinhamentos********/
+.p-align{
+    text-align: justify;
+    padding: 5px;
+    margin: 15px;
+    max-width: max-content;
+}
+
+.center{
+    text-align: center;
+}
+
+.my{
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.mx{
+    padding: 5px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/****botoes e links***/
+/**** Link *****/
+.btn{
+    background-color: rgb(255, 255, 255);
+    padding: 15px 100px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.281);
+}
+.btn:hover{
+    padding: 18px 101px;
+    box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.205);
+}
+.btn a:hover{
+    color: rgb(0, 0, 0);
+}
+
+input{
+    color: cornsilk;
+    background-color: rgb(141, 181, 221);
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.281);
+}
+textarea{
+    color: cornsilk;
+    background-color: rgb(141, 181, 221);
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.281);
+}
