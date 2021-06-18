@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
 
   <!-- Font Awesome -->
@@ -15,48 +15,56 @@
 </head>
 <body>
 
-  <div class="bg-primary center my sombra">
-    <h1>Olá meu nome é Elielthon Soares!</h1>
+  <div class="center my blur">
+    <h1 class="h1">Olá meu nome é Elielthon Soares!</h1>
   </div>
-
-  <hr>
 
   <h2 class="center"><strong>SEJA BEM VINDE!</strong></h2>
 
-  <h3 class="mx">Sobre euzinho</h3>
+  
 
-  <div class="bg-secondary container mx my">
+  <div class="container mx my">
 
-    <img class="img-perfil sombra" src="https://media-exp1.licdn.com/dms/image/C4D03AQHuYd7L7T88Sw/profile-displayphoto-shrink_200_200/0/1618875464817?e=1629331200&v=beta&t=7fzXP1yDatjcEaQQWP-QWStGnEQ-ngxLIguTLcxquDo" alt="">
-    <p class="p-align">19 anos, residente em Guarulhos/Sp. 
+
+    <div class="blur border-1">
+      <div class="center">
+        <h3 class="mx">Sobre euzinho</h3>
+        <img class="img-perfil sombra" id="foto" onmousemove="moverFoto()" onmouseout="fotoNormal()" src="https://media-exp1.licdn.com/dms/image/C4D03AQHuYd7L7T88Sw/profile-displayphoto-shrink_200_200/0/1618875464817?e=1629331200&v=beta&t=7fzXP1yDatjcEaQQWP-QWStGnEQ-ngxLIguTLcxquDo" alt="Foto do perfil!">
+      </div>
+
+      <p class="p-align">19 anos, residente em Guarulhos/Sp. 
       Adquirindo conhecimento em desenvolvimento Web Java Fullstack.
       Agradeço a Generation Brasil pela oportunidade de estar me ajudando com essa parte da minha jornada!
       Amo me expressar com arte, apaixonado por Cinema e Fotografia,
       sempre ligado também em Tecnologia. Adquirindo conhecimento através da persistência e criatividade!
       Linguagens conhecidas: Java, HTML5, CSS.
       Experiência com MySQL ,Spring, Bootstrap e Git.</p>
+    </div>
 
   </div>
   
-  
-  <div class="container">
-  
-    <div>
-      <h3 class="mx">EU NAS MÍDIAS</h3>
-      <div>
-        <p><Strong>Redes Sociais</Strong></p>
+  <h3 class="center">EU NAS MÍDIAS</h3>
+  <div class="container ">
+    
+
+    <div class="mx my center grid-container">
+      <div class="border">
+        <p><Strong>REDES SOCIAIS</Strong></p>
         <ul id="list-social">
-            <li>Instagram:<a href="https://www.instagram.com/letocrzy/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-            <li>Linkedin: <a href="https://www.linkedin.com/in/elielthon-soares-de-souza-a3a7bb1a2/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li>GitHub:<a href="https://github.com/LetoMurakai" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li>Instagram:<a href="https://www.instagram.com/letocrzy/"><i class="fab fa-instagram icons" target="_blank"></i></a></li>
+            <li>Linkedin: <a href="https://www.linkedin.com/in/elielthon-soares-de-souza-a3a7bb1a2/" target="_blank"><i class="fab fa-linkedin icons"></i></a></li>
+            <li>GitHub:<a href="https://github.com/LetoMurakai" target="_blank"><i class="fab fa-github icons"></i></a></li>
         </ul>
       </div>
-    </div>
-      <div>
-        <h4>PAGINA DE CONTATO</h4>
+      <div class="mx my center border">
+        <P class="center"><Strong>PAGINA DE CONTATO</Strong></P>
         <p>Entre em contato comigo: <a href="contato.html">contato<i class="far fa-smile-wink"></i></a></p>
       </div>
+    </div>
 
   </div>
+
+  <!--Script-->
+  <script src="script.js"></script>
 </body>
 </html>

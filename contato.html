@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
 
     <!-- Font Awesome -->
@@ -14,54 +14,56 @@
     <title>CONTATO DO LETO</title>
 </head>
 <body>
-    <div class="bg-primary center my">
-      <a href="index.html">voltar ao sobre</a>
-      <h1>CONTATO</h1>
-    </div>
-    
-    <hr>
-
-    <div class="center mx">
-      <h3><Strong>Elielthon Soares</Strong></h3>
-      <p><Strong>Redes Sociais</Strong></p>
-        <div>
-          <ul id="list-social">
-              <li>Instagram:<a href="https://www.instagram.com/letocrzy/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-              <li>Linkedin: <a href="https://www.linkedin.com/in/elielthon-soares-de-souza-a3a7bb1a2/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li>GitHub:<a href="https://github.com/LetoMurakai" target="_blank"><i class="fab fa-github"></i></a></li>
-          </ul>
-        </div>
+    <div class="center my blur">
+      <a href="index.html" class="btn"><strong>voltar ao sobre</strong></a>
+      <h1 class="h1">CONTATO</h1>
     </div>
 
-    <div class="bg-secondary center mx">
+    <div class=" bg-secondary center blur">
       <h2>Contato Profissional</h2>
       <form>
         <label for="nome"><Strong>Nome: </Strong></label>
-        <input type="text" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id='txtNome'></div>
         <br>
         <label for="email"><Strong>E-mail: </Strong></label>
-        <input type="email" id="email">
-        <br>
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id='txtEmail'></div>
         <br>
         <label for="tel"><Strong>Telefone: </Strong></label>
-        <input type="tel" id="tel">
-        <br>
+        <input type="tel" id="tel" onkeyup='validaTel()'>
+        <div id='txtTel'></div>
         <br>
         <label for="assunto"><Strong>Assunto: </Strong></label>
         <br>
 
-        <textarea name="assunto" id="assunto" cols="40" rows="10" lang="pt-br"></textarea>
+        <textarea onkeyup="validaAssunto()" name="assunto" id="assunto" cols="40" rows="10" lang="pt-br"></textarea>
+        <div id='txtAssunto'></div>
         <br>
-        <button class="btn">Enviar</button>
-    </form>
-    </div>
 
-    <h3 class="center my">Onde me encontrar ?</h3>
-    <div class="container mx">
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117134.37912838008!2d-46.53546776272078!3d-23.444250726309523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef53fb1b5e26d%3A0x974ce18d22c3555b!2sGuarulhos%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1623861834774!5m2!1spt-BR!2sbr"
-     width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <button class="btn" onclick="enviar()">Enviar</button>
+      </form>
+  
     </div>
+    
+    <div class="container my blur">
+
+      <div class="mx my center bg-primary border-1">
+        <div>
+          <p><Strong>Onde me encontrar ?</Strong></p>
+          <iframe id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117134.37912838008!2d-46.53546776272078!3d-23.444250726309523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef53fb1b5e26d%3A0x974ce18d22c3555b!2sGuarulhos%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1623861834774!5m2!1spt-BR!2sbr"
+          width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+  
+        <div class="center mx">
+          <h4><Strong>Elielthon Soares</Strong></h4>
+          <p>Endereço: Rua aquelalá</p>
+          <p>Telefone: 11 988888888 </p>
+        </div>
+      </div>
+
+  
+   <!--Script-->
+   <script src="script.js"></script>
 </body>
 </html>
