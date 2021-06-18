@@ -49,7 +49,7 @@ function validaEmail() {
 function validaTel() {
     let txtTel = document.querySelector('#txtTel') 
  
-    if (tel.value.indexOf('(11)') == -1 || tel.value.indexOf('9') == -1 ) {
+    if (tel.value.indexOf('11') == -1 || tel.value.indexOf('9') == -1 ) {
         txtTel.innerHTML = 'Telefone inválido'
         tel.style.border = '2px solid red' 
     } else {
