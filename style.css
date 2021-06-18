@@ -25,6 +25,9 @@ body{
   .grid-container > div {
     background-color: rgba(202, 209, 245, 0.900);
     filter: drop-shadow(1px 3px 90px #2a8bb1);
+    -o-filter: drop-shadow(1px 3px 90px #2a8bb1);
+    -mz-filter: drop-shadow(1px 3px 90px #2a8bb1);
+    -webkit-filter: drop-shadow(1px 3px 90px #2a8bb1);
   }
 /********estilos padrões********/
 .bg-primary{
@@ -65,8 +68,8 @@ body{
 /********alinhamentos********/
 .p-align{
     text-align: justify;
-    padding: 5px;
-    margin: 15px;
+    font-weight: 500;
+    margin: 15px 8px;
     max-width: max-content;
 }
 
@@ -127,3 +130,47 @@ textarea{
     min-width: 35vw;
     max-width: 50vw;
 }
+/****responsividade***/
+@media only screen and (max-width: 600px) {
+    #mapa{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .btn{
+        margin-bottom: 60px;
+        font-size: 0.8em;
+    }
+    textarea{
+        min-height: 20vw;
+        max-height: 35vw;
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+    .h1{
+        font-size: 1.8em;
+    }
+    .btn-contato{
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        padding: 2px 20px;
+        font-size: 1.5rem;
+        color: #512790;
+    }
+    .btn-contato:hover{
+        background-color: rgba(0, 0, 0, 0.100);
+        font-size: 1.4rem;
+        color: #7b3cda;
+    }
+    .grid-container {
+        column-gap: 1rem;
+        display: block;
+        grid-template-columns: auto auto auto;
+      }
+      .grid-container > div {
+        background-color: rgba(106, 121, 196, 0.9);
+        filter: drop-shadow(1px 1px 90px #000000);
+        -o-filter: drop-shadow(1px 1px 90px #000000);
+        -webkit-filter: drop-shadow(1px 1px 90px #000000);
+      }
+  }
